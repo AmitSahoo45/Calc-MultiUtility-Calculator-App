@@ -1,0 +1,755 @@
+:root {
+    --Very-dark-cyan: #00494d;
+    --Dark-grayish-cyan: #5e7a7d;
+    --Dark-grayish-cyan: #7f9c9f;
+    --Light-grayish-cyan: #c5e4e7;
+    --Very-Light-grayish-cyan: #f4fafa;
+    --White: #ffffff;
+    --color-1: #0D420D;
+    --color-2: #3DA538;
+    --color-3: #83CA9C;
+    --color-4: #C4E4B5;
+    --color-5: #F9EE6E;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Raleway: 'Raleway', sans-serif;
+    --Space-Mono: 'Space Mono', monospace;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--Montserrat);
+    transition: all 0.3s ease-out;
+    background-color: var(--Very-Light-grayish-cyan);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--color-1);
+    color: var(--White);
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+/* -------COMMON CLASSES ------- */
+.text-type-1 {
+    color: #3DA538;
+}
+
+.text-type-2 {
+    color: var(--color-1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.border-type-1 {
+    border: inherit;
+    border-radius: 7px;
+}
+
+.left__line__styling {
+    border-top: 3px solid var(--color-1);
+    width: 30vw;
+}
+
+.right__line__styling {
+    border-top: 3px solid var(--color-1);
+    width: 30vw;
+    float: right;
+}
+
+.top__border__each__section {
+    border-top: 1px solid var(--color-1);
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+.sticky-top {
+    top: -1px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+/* HEADER */
+.heading-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-image {
+    width: 260px;
+}
+
+.header-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header {
+    margin-top: 2rem;
+    font-family: var(--Raleway);
+    width: 400px;
+}
+
+
+header p {
+    color: #6c7880;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    margin: 0.6rem 0;
+}
+
+/* -------- NAVIGATION BAR ----------- */
+nav {
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.400);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.205);
+}
+
+.nav-item a {
+    color: #000 !important;
+}
+
+.nav-item a:not(.dropdown-menu li .dropdown-item) {
+    margin: 0 0.5rem;
+    font-weight: 600;
+    /* color: #ffffff !important; */
+}
+
+.nav-item a:not(.dropdown-menu li .dropdown-item):hover {
+    color: var(--color-2) !important;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    color: var(--color-2);
+}
+
+/* --------- LANDING PAGE ELEMENTS -------- */
+.landing-page {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 50vw;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #5e7a7d;
+}
+
+.text span:not(.text-type-2) {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-2);
+}
+
+.ist-img {
+    background-color: var(--Light-grayish-cyan);
+    width: 350px;
+    border: 0;
+    padding: 1rem 0;
+    margin: 0 2rem 0 0;
+    border-radius: 100px 100px 100px 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.250);
+}
+
+.ist-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ------------------------------------------------- */
+/*TIP CALCULATOR BODY */
+
+.tc-one {
+    width: 42vw;
+    padding: 1rem 1.4rem;
+}
+
+.image-besides {
+    width: 300px;
+}
+
+.image-besides img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tip-calculator {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    margin: 0.8rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border: 0px solid var(--Light-grayish-cyan);
+    border-radius: 10px;
+    font-family: var(--Space-Mono);
+    color: var(--Dark-grayish-cyan);
+    font-weight: 700;
+}
+
+.input-text {
+    width: 42vw;
+}
+
+.input-text div p {
+    font-size: 1.3rem;
+}
+
+.bill__input {
+    border: 1px solid var(--Dark-grayish-cyan);
+    width: 42vw;
+    text-align: right;
+    background-color: var(--Very-Light-grayish-cyan);
+}
+
+.rupee__box {
+    position: relative;
+}
+
+.font__sign {
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+}
+
+.tip_value_box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-auto-columns: 180px;
+    width: 42vw;
+    /* justify-items: stretch;
+    align-items: stretch; */
+}
+
+.tip_value_box input:not([type="text"]) {
+    font-size: 1rem;
+    padding: 10px 12px;
+    border: 0px;
+    color: #ffffff;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 5px;
+}
+
+.tip__box input:not([type="button"]) {
+    border: 1px solid var(--Dark-grayish-cyan);
+    width: 42vw;
+    text-align: right;
+    border-radius: 7px;
+    background-color: var(--Very-Light-grayish-cyan);
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* TIP CALCULATOR'S SECOND BOX */
+.tc-two {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--Very-dark-cyan);
+    margin: 1.3rem;
+    color: var(--Very-Light-grayish-cyan);
+    border-radius: 10px;
+}
+
+.tc-two p {
+    margin: 0;
+}
+
+.per__person {
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5rem 0;
+    align-items: center;
+}
+
+.display__amt p {
+    font-size: 2.2rem;
+}
+
+.display__text p {
+    font-size: 1rem;
+}
+
+.display__text p:last-child {
+    color: var(--Dark-grayish-cyan);
+}
+
+.button__box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem 2.5rem;
+}
+
+.button__box button {
+    padding: 0.8rem 0;
+    margin: 0.5rem 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: #0098a0;
+    color: #ffffff;
+    transition: all 0.35s ease-out;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.button__box button:hover {
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+/* AGE DIFFERENCE CALCULATOR BODY + INNER CONTENT CSS */
+/* #age__calc {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-1);
+} */
+
+.calc__nuemor__explain__box {
+    width: 80vw;
+    margin: 1.5rem auto;
+
+}
+
+.nuemor__style__container,
+.calc__nuemor__heading {
+    width: 40vw;
+}
+
+.calc__nuemor__heading h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.nuemor__style__container {
+    font-weight: 500;
+    color: var(--White);
+    border-radius: 14px;
+    background: var(--color-3);
+    box-shadow: 6px 6px 45px #cccccc,
+        -6px -6px 45px #ffffff;
+    padding: 2rem;
+    margin: 0 2rem;
+}
+
+.calc__nuemor__image {
+    width: 300px;
+}
+
+.calc__nuemor__image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ac_det_text {
+    grid-area: one;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-3);
+}
+
+.date__input,
+.date__input__two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    /* flex-direction: column; */
+}
+
+.date__input {
+    grid-area: two;
+}
+
+.date__input__two {
+    grid-area: three;
+}
+
+.r_ag_calctext_peron {
+    grid-area: four;
+}
+
+.data__output {
+    grid-area: five;
+}
+
+.age__calc {
+    display: grid;
+    grid-gap: 10px;
+    width: 85vw;
+    margin: 0 auto;
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    border-radius: 10px;
+    grid-template-areas:
+        'one one'
+        'two three'
+        'four four'
+        'five five';
+}
+
+.date__input select:first-child {
+    font-size: 1rem;
+}
+
+.date__intake select,
+.date__intake input {
+    padding: 0.5rem;
+    background-color: var(--Very-Light-grayish-cyan);
+}
+
+.date__intake p {
+    text-align: center;
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* GST CALCULATOR BOX'S BODY */
+.gst__calc__box {
+    width: 80vw;
+    margin: 1.5rem auto;
+    display: grid;
+    grid-template-areas:
+        'price-select gst-result'
+        'buttons-gst buttons-gst';
+    background-color: var(--Very-dark-cyan);
+    padding: 2rem;
+    border-radius: 10px;
+    color: var(--White);
+    font-weight: 600;
+}
+
+.price__select {
+    grid-area: price-select;
+    border-right: 2px solid var(--color-2);
+}
+
+.gst__result {
+    grid-area: gst-result;
+}
+
+.buttons__gst {
+    grid-area: buttons-gst;
+}
+
+.gst__radio__box {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: var(--Very-Light-grayish-cyan);
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: var(--White);
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: var(--Very-dark-cyan);
+    position: absolute;
+    top: 3.5px;
+    left: 3.7px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* USED IN NUMBER SYSTEM BODY */
+.number_intake {
+    grid-area: number-intake;
+    border-right: 2px solid var(--color-2);
+}
+
+.number__outtake {
+    grid-area: number-outtake;
+}
+
+.numeral__buttons {
+    grid-area: numeral-buttons;
+}
+
+.numerical__box {
+    width: 80vw;
+    background: var(--Very-dark-cyan);
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: 'number-intake number-outtake'
+        'numeral-buttons numeral-buttons';
+    font-weight: 600;
+}
+
+.number_intake input,
+.number_intake select {
+    cursor: pointer;
+    background-color: var(--Very-Light-grayish-cyan);
+    padding: 0.4rem;
+}
+
+.number_intake select option:checked,
+.date__intake select option:checked {
+    background-color: var(--Light-grayish-cyan);
+}
+
+.number_intake select option:hover,
+.date__intake select option:hover {
+    background-color: rgb(151, 151, 151);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* BMI CALCULATOR BODY */
+.weight__in {
+    grid-area: weight-in;
+}
+
+.height__in {
+    grid-area: height-input;
+}
+
+.bmi__buttons {
+    grid-area: bmi-buttons;
+}
+
+.bmi__output {
+    grid-area: bmi-output;
+    border-top: 1px solid var(--color-4);
+}
+
+.bmi__calc__box {
+    width: 80vw;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 10px;
+    margin: 2rem auto;
+    margin-top: 8rem;
+    display: grid;
+    grid-template-areas: 'weight-in height-input'
+        'bmi-buttons bmi-buttons'
+        'bmi-output bmi-output';
+    padding: 2rem;
+    color: var(--White);
+    font-weight: 600;
+}
+
+.table__display {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* CURRENCY CONVERTER BODY */
+.currency__calc__body {
+    width: 80vw;
+    background-color: var(--Very-dark-cyan);
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.currency__calc__body .currency-row-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.currency-converter {
+    width: 100%;
+    max-width: 530px;
+    text-align: center;
+}
+
+.curr__btn {
+    padding: 1.2rem 1rem;
+    margin: 0.5rem 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: #0098a0;
+    color: #ffffff;
+    transition: all 0.35s ease-out;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.currency__calc__body .currency-row-outer input,
+.currency__calc__body .currency-row-outer select {
+    color: #363636;
+    font-size: 1rem;
+    height: 2.3em;
+    border-radius: 4px;
+    max-width: 100%;
+    width: calc(100% - 15px);
+    margin: auto;
+    outline: 0;
+    background: #fff;
+    border-color: #dbdbdb;
+    padding-left: 15px;
+    border: 1px solid #00000057;
+    box-shadow: inset 0 0.0625em 0.125em rgb(10 10 10 / 5%);
+    -webkit-appearance: none;
+}
+
+.currency__calc__body .currency-row-outer .field.grid-50-50 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.currency__calc__body .currency-row-outer .currency-converter .colmun {
+    margin-bottom: 15px;
+}
+
+.currency__calc__body .currency-row-outer select.currency {
+    border-color: var(--color-2);
+    width: 375px;
+    height: 100%;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 100%;
+    outline: 0;
+    display: block;
+}
+
+.currency-converter .select {
+    position: relative;
+    height: 100%;
+}
+
+.currency__calc__body .currency-row-outer h2 {
+    padding-bottom: 30px;
+}
+
+.currency__calc__body .currency-row-outer .currency-converter .select:after {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    content: "";
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    border-top: 0;
+    border-right: 0;
+    display: block;
+    height: 0.525em;
+    width: 0.525em;
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    right: 1.125em;
+    margin-top: -0.4375em;
+}
+
+.currency__calc__body .currency-row-outer .select:not(:hover)::after {
+    border-color: #3273dc;
+}
+
+.currency__calc__body .currency-row-outer .select:hover::after {
+    border-color: #363636;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* USED IN JS CLASSES */
+.highlight__input:focus {
+    /* border: 1px solid var(--color-4); */
+    outline-color: #3DA538;
+}
+
+.tip__ocl {
+    background-color: var(--Light-grayish-cyan) !important;
+    color: var(--Very-dark-cyan) !important;
+}
+
+.input__onfocus {
+    outline: var(--Light-grayish-cyan);
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ONLY FOR #ID */
+#error__display {
+    color: #ff0000;
+    display: none;
+}
+
+#gst__data__input {
+    width: 30vw;
+    padding: 0.5rem 0.5rem;
+}
+
+#bmi__value__display {
+    color: var(--Very-Light-grayish-cyan);
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */

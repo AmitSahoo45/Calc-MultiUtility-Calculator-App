@@ -1,0 +1,9 @@
+@media (max-width: 576px) {
+    .dropdown-menu {
+        background-color: rgb(33, 37, 41);
+    }
+
+    .dropdown-menu li a {
+        color: #fff;
+    }
+}
