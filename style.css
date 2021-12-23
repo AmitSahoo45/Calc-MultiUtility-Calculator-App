@@ -68,6 +68,12 @@ body {
     border-top: 1px solid var(--color-1);
 }
 
+.error__text__msg p {
+    font-weight: bolder;
+    font-size: 1rem;
+    visibility: hidden;
+}
+
 /* ---------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------- */
 .sticky-top {
@@ -386,8 +392,22 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     margin: 1rem 0;
+    position: relative;
 }
 
+.date__select__cont input[type="date"] {
+    position: relative;
+    /* width: 20rem; */
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    user-select: none;
+}
 .date__input {
     grid-area: two;
 }
@@ -415,7 +435,6 @@ nav {
     grid-template-areas:
         'one one'
         'two three'
-        /* 'four four' */
         'five five';
 }
 
@@ -509,8 +528,8 @@ nav {
     height: 13px;
     background: var(--Very-dark-cyan);
     position: absolute;
-    top: 3.5px;
-    left: 3.7px;
+    top: 3.3px;
+    left: 3.5px;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;

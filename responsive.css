@@ -16,6 +16,10 @@
 }
 
 @media (max-width: 860px) {
+    .navbar-toggler {
+        background-color: #83CA9C;
+    }
+
     .text {
         font-size: 1rem;
     }
@@ -46,7 +50,7 @@
     }
 
     .button__box button {
-        width: 250px;
+        width: 155px;
         margin: 0.5rem auto;
     }
 
@@ -94,6 +98,15 @@
 }
 
 @media (max-width: 576px) {
+    .text-center h1 {
+        font-size: 1.2rem !important;
+    }
+
+    .text-center p {
+        line-height: 1rem !important;
+        font-size: 0.8rem !important;
+    }
+
     .dropdown-menu {
         background-color: rgb(33, 37, 41);
     }
@@ -124,6 +137,21 @@
     .bill__input,
     .tip_value_box,
     .tip__box input:not([type="button"]) {
-        width: 80vw;
+        width: 70vw;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .number_intake>div {
+        flex-direction: column;
+    }
+
+    .currency-converter .select {
+        width: 250px;
+    }
+
+    #numeral__outpot {
+        width: 200px;
     }
 }

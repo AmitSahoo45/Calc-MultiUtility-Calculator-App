@@ -223,139 +223,19 @@
     <!-- AGE CALCULATOR BODY -->
     <div class="age__calc">
       <p class="ac_det_text">Enter the Date details here : </p>
+      <!-- DATE INPUT  -->
       <div class="date__input">
         <div class="date__select__cont">
-          <div class="date__intake">
-            <p>Enter Date</p>
-            <select name="date" id="date__one" class="m-auto d-flex">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-              <option value="26">26</option>
-              <option value="27">27</option>
-              <option value="28">28</option>
-              <option value="29">29</option>
-              <option value="30">30</option>
-              <option value="31">31</option>
-            </select>
-          </div>
-          <div class="date__intake" class="m-auto d-flex">
-            <p>Enter Month</p>
-            <select name="month" id="month__one">
-              <option value="January">January</option>
-              <option value="February">February</option>
-              <option value="March">March</option>
-              <option value="April">April</option>
-              <option value="May">May</option>
-              <option value="June">June</option>
-              <option value="July">July</option>
-              <option value="August">August</option>
-              <option value="September">September</option>
-              <option value="Octobor">Octobor</option>
-              <option value="November">November</option>
-              <option value="December">December</option>
-            </select>
-          </div>
-          <div class="date__intake">
-            <p>Enter Year</p>
-            <input type="text" name="year" id="year__one" placeholder="Year" autocomplete="on" max="3000" min="1000"
-              onpaste="return false;" ondrop="return false;" size="5" value="1000"
-              onfocus="if(this.value === '1000') this.value = ''" onblur="if(this.value === '') this.value='1000'"
-              onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="4" minlength="4"
-              class="m-auto d-flex" />
-          </div>
+          <input type="date" name="start__date_input" id="start__date_input">
         </div>
-        <p><strong>Details for Person 1 </strong></p>
+        <p><strong>Start Date</strong></p>
       </div>
-
 
       <div class="date__input__two">
         <div class="date__select__cont">
-          <div class="date__intake">
-            <p>Enter Date</p>
-            <select name="date" id="date__two" class="m-auto d-flex">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-              <option value="26">26</option>
-              <option value="27">27</option>
-              <option value="28">28</option>
-              <option value="29">29</option>
-              <option value="30">30</option>
-              <option value="31">31</option>
-            </select>
-          </div>
-          <div class="date__intake" class="m-auto d-flex">
-            <p>Enter Month</p>
-            <select name="month" id="month__two">
-              <option value="January">January</option>
-              <option value="February">February</option>
-              <option value="March">March</option>
-              <option value="April">April</option>
-              <option value="May">May</option>
-              <option value="June">June</option>
-              <option value="July">July</option>
-              <option value="August">August</option>
-              <option value="September">September</option>
-              <option value="Octobor">Octobor</option>
-              <option value="November">November</option>
-              <option value="December">December</option>
-            </select>
-          </div>
-          <div class="date__intake">
-            <p>Enter Year</p>
-            <input type="text" name="year" id="year__one" placeholder="Year" autocomplete="on" max="3000" min="1000"
-              onpaste="return false;" ondrop="return false;" size="5" value="3000"
-              onfocus="if(this.value === '3000') this.value = ''" onblur="if(this.value === '') this.value='3000'"
-              onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="4" minlength="4"
-              class="m-auto d-flex" />
-          </div>
+          <input type="date" name="end__date_input" id="end__date_input">
         </div>
-        <p><strong> Details for Person 2 </strong></p>
+        <p><strong>Ending Date</strong></p>
       </div>
       <!-- <div class="r_ag_calctext_peron d-flex justify-content-around align-items-center "> -->
 
@@ -363,17 +243,15 @@
       <!-- </div> -->
       <div class="data__output">
         <div class="button__box">
-          <button>Calculate</button>
-          <button type="reset">reset</button>
+          <button id="calc__for__days">Calculate</button>
+          <button type="reset" id="reset__for__days">reset</button>
         </div>
-        <p class="text-center fs-3">The Age difference : </p>
+        <p class="text-center fs-3">Difference : </p>
         <div class="fs-4 d-flex align-items-center justify-content-center">
           <p class="mx-4"><span id="date__dislay">00</span> Days</p>
-          <p class="mx-4"><span id="month__display">00</span> Months</p>
-          <p class="mx-4"><span id="year__display">0000</span> Year</p>
         </div>
-        <div class="error__text__age">
-
+        <div class="error__text__msg text-danger text-center">
+          <p id="age__er__msg">Invalid date!!! Please try again</p>
         </div>
       </div>
     </div>
@@ -448,7 +326,7 @@
       </div>
       <div class="buttons__gst">
         <div class="button__box">
-          <button>Calculate</button>
+          <button id="calc__for__gst">Calculate</button>
           <button type="reset">reset</button>
         </div>
       </div>

@@ -51,10 +51,28 @@ no__people.addEventListener("focus", () => {
 
 
 // ---------------------------------------------------- //
-
+// ---------------------------------------------------- //
+// CALCULATING DAYS BETWEEN TWO DATES
+document.getElementById("calc__for__days").addEventListener("click", () => {
+    const start = document.getElementById("start__date_input").value;
+    const end = document.getElementById("end__date_input").value;
+    // console.log(start + "\n" + end);
+    const d1 = new Date(end);
+    const d2 = new Date(start);
+    if ((d1 instanceof Date && !isNaN(d1.valueOf())) && (d2 instanceof Date && !isNaN(d2.valueOf()))) {
+        document.getElementById("age__er__msg").style.visibility = "hidden";
+        const diffTime = Math.abs(d1 - d2);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        document.getElementById("date__dislay").innerHTML = diffDays;
+    } else
+        document.getElementById("age__er__msg").style.visibility = "visible";
+})
 // ---------------------------------------------------- //
 // ---------------------------------------------------- //
-// ---------------------------------------------------- //
+// CALCULATING THE GST PRICE
+document.getElementById("calc__for__gst").addEventListener("click", () => {
+    
+})
 // ---------------------------------------------------- //
 
 // ---------------------------------------------------- //
